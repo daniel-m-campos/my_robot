@@ -24,7 +24,7 @@
     </inertial>
 
     <collision name='collision'>
-      <origin xyz="0 0 0" rpy=" 0 0 0"/> 
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
@@ -172,7 +172,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://my_robot/meshes/hokuyo.dae"/> 
+        <mesh filename="package://my_robot/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -193,21 +193,21 @@
   </joint>
 
   <gazebo reference="left_wheel">
-    <material>Gazebo/Green</material>
+    <material>Gazebo/Gold</material>
   </gazebo>
   <gazebo reference="right_wheel">
-    <material>Gazebo/Green</material>
+    <material>Gazebo/Gold</material>
   </gazebo>
   <gazebo reference="chassis">
-    <material>Gazebo/Blue</material>
-  </gazebo>
-  <gazebo reference="camera">
     <material>Gazebo/Red</material>
   </gazebo>
-  <gazebo reference="left_wheel">
-    <material>Gazebo/Green</material>
+  <gazebo reference="camera">
+    <material>Gazebo/BlueGlow</material>
+  </gazebo>
+  <gazebo reference="hokuyo">
+    <material>Gazebo/Gold</material>
   </gazebo>
 
   <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
-  
+
 </robot>
