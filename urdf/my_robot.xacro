@@ -195,10 +195,10 @@
   <joint name="camera_optical_joint" type="fixed">
     <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
     <parent link="camera"/>
-    <child link="camera_link_optical"/>
+    <child link="camera_link"/>
   </joint>
 
-  <link name="camera_link_optical">
+  <link name="camera_link">
   </link>
 
   <gazebo reference="left_wheel">
